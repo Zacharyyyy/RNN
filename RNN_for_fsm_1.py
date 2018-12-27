@@ -7,17 +7,17 @@ import matplotlib.pyplot as plt
 
 
 DICTIONARY = ['i', 'he', 'she', 'they', '','am', 'is', 'are', 'boy', 'girl', 'boys', 'girls','a', 'an',\
-'it', 'dog', 'dogs', 'cat', 'cats', 'computer', 'computers', 'cup', 'cups' 
+'it', 'dog', 'dogs', 'cat', 'cats', 'computer', 'computers', 'cup', 'cups', 'cake', 'cakes', \
+'use', 'uses', 'using', 'eat', 'eats', 'eating'
 ]
 
-
-NUMBER_OF_POSITIONS = 4
+NUMBER_OF_POSITIONS = 5
 START_POSITION = np.zeros(NUMBER_OF_POSITIONS)
 START_POSITION[0] = 1
 NUMBER_OF_CHARS = len(DICTIONARY)
 PERCENT_OF_TESTS = 0.1
 TenzToAdd = 2.0
-EPS = 0.0001
+EPS = 0.000001
 NU = 0.7
 NU_ADDER = 0.3
 
@@ -58,7 +58,7 @@ class NeuralNetwork:
             random.shuffle(dataset)
             cases_left = len(dataset)
             epoch_number += 1
-            #print 'Epoch #' + str(epoch_number)
+            print 'Epoch #' + str(epoch_number)
             while(cases_left > tests_size):
                 self.train(dataset[cases_left - 1][0], dataset[cases_left - 1][1])
                 cases_left -= 1
@@ -67,9 +67,8 @@ class NeuralNetwork:
                 average_error += cost_function(dataset[i][1], self.check(dataset[i][0]))
             average_error /= cases_left
             plt.plot(times, average_error, 'bo')
-            plt.show()
             times += 1
-            #print "Average error: " + str(average_error)
+            print "Average error: " + str(average_error)
 
     def train(self, word, exp):
         cut_v = np.vectorize(cut)

@@ -35,3 +35,9 @@
 * with this data set especially for learning plural grammar, the fsm learned that you need to add an 's'  and use 'are' for plural.
 * with 4 states
 ![](https://i.imgur.com/mlZEwXs.png)
+## sentence_1
+![](https://i.imgur.com/6DobSx5.png)
+* error rate 2.950791366248299e-08
+* terminal state: 3,4
+* in this data set, it learned the present simple and present continous tenses with 5 states
+* ![](https://i.imgur.com/vLAOKmj.png)

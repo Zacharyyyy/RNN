@@ -1,0 +1,156 @@
+I am a boy\1
+I am a girl\1
+I am a boys\0
+I am a girls\0
+he is a boy\1
+he is a boys\0
+she is a girl\1
+she is a girls\0
+they are boys\1
+they are girls\1
+they are a boy\0
+they are a girl\0
+they are a boys\0
+they are a girls\0
+it is a dog\1
+it is a cat\1
+it is a computer\1
+it is a cup\1
+they are dogs\1
+they are cats\1
+they are computers\1
+they are cups\1
+it is dog\0
+it is a dogs\0
+it is cat\0
+it is a cats\0
+it is computer\0
+it is a computers\0
+it is cup\0
+it is a cups\0
+it is a cake\1
+it is a cakes\0
+they are cakes\1
+they are cake\0
+a boy is eating a cake\1
+the boy is eating a cake\1
+the boy is eating the cake\1
+the boys are eating the cake\1
+the boy is eating the cakes\1
+the boys are eating the cakes\1
+a boy is eat a cake\0
+boy is eating a cake\0
+the boy are eating the cake\0
+the boys is eating the cake\0
+the boy eating the cakes\0
+the boys is eating the cakes\0
+a boy eats a cake\1
+a boy eats cakes\1
+the boys eat a cake\1
+the boys eat cakes\1
+a boy eat a cake\0
+a boy eat cakes\0
+the boys eats a cake\0
+the boys eats cakes\0
+a girl is eating a cake\1
+the girl is eating a cake\1
+the girl is eating the cake\1
+the girls are eating the cake\1
+the girl is eating the cakes\1
+the girls are eating the cakes\1
+a girl is eat a cake\0
+girl is eating a cake\0
+the girl are eating the cake\0
+the girls is eating the cake\0
+the girl eating the cakes\0
+the girls is eating the cakes\0
+a girl eats a cake\1
+a girl eats cakes\1
+the girls eat a cake\1
+the girls eat cakes\1
+a girl eat a cake\0
+a girl eat cakes\0
+the girls eats a cake\0
+the girls eats cakes\0
+
+a girl is using a computer\1
+the girl is using a computer\1
+the girl is using the computer\1
+the girls are using the computer\1
+the girl is using the computers\1
+the girls are using the computers\1
+a girl is use a computer\0
+girl is useing a computer\0
+the girl are useing the computer\0
+the girls is useing the computer\0
+the girl useing the computers\0
+the girls is useing the computers\0
+a girl uses a computer\1
+a girl uses computers\1
+the girls use a computer\1
+the girls use computers\1
+a girl use a computer\0
+a girl use computers\0
+the girls uses a computer\0
+the girls uses computers\0
+a boy is using a computer\1
+the boy is using a computer\1
+the boy is using the computer\1
+the boys are using the computer\1
+the boy is using the computers\1
+the boys are using the computers\1
+a boy is use a computer\0
+boy is useing a computer\0
+the boy are useing the computer\0
+the boys is useing the computer\0
+the boy useing the computers\0
+the boys is useing the computers\0
+a boy uses a computer\1
+a boy uses computers\1
+the boys use a computer\1
+the boys use computers\1
+a boy use a computer\0
+a boy use computers\0
+the boys uses a computer\0
+the boys uses computers\0
+
+a girl is using a cup\1
+the girl is using a cup\1
+the girl is using the cup\1
+the girls are using the cup\1
+the girl is using the cups\1
+the girls are using the cups\1
+a girl is use a cup\0
+girl is useing a cup\0
+the girl are useing the cup\0
+the girls is useing the cup\0
+the girl useing the cups\0
+the girls is useing the cups\0
+a girl uses a cup\1
+a girl uses cups\1
+the girls use a cup\1
+the girls use cups\1
+a girl use a cup\0
+a girl use cups\0
+the girls uses a cup\0
+the girls uses computers\0
+a boy is using a cup\1
+the boy is using a cup\1
+the boy is using the cup\1
+the boys are using the cup\1
+the boy is using the cups\1
+the boys are using the cups\1
+a boy is use a cup\0
+boy is useing a cup\0
+the boy are useing the cup\0
+the boys is useing the cup\0
+the boy useing the cups\0
+the boys is useing the cups\0
+a boy uses a cup\1
+a boy uses cups\1
+the boys use a cup\1
+the boys use cups\1
+a boy use a cup\0
+a boy use cups\0
+the boys uses a cup\0
+the boys uses cups\0
