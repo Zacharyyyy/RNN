@@ -33,3 +33,5 @@
 * error rate 4.2167154180955916e-08
 * terminal state: 3
 * with this data set especially for learning plural grammar, the fsm learned that you need to add an 's'  and use 'are' for plural.
+* with 4 states
+![](https://i.imgur.com/mlZEwXs.png)

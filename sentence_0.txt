@@ -1,0 +1,30 @@
+I am a boy\1
+I am a girl\1
+I am a boys\0
+I am a girls\0
+he is a boy\1
+he is a boys\0
+she is a girl\1
+she is a girls\0
+they are boys\1
+they are girls\1
+they are a boy\0
+they are a girl\0
+they are a boys\0
+they are a girls\0
+it is a dog\1
+it is a cat\1
+it is a computer\1
+it is a cup\1
+they are dogs\1
+they are cats\1
+they are computers\1
+they are cups\1
+it is dog\0
+it is a dogs\0
+it is cat\0
+it is a cats\0
+it is computer\0
+it is a computers\0
+it is cup\0
+it is a cups\0

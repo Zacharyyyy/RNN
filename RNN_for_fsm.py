@@ -1,14 +1,14 @@
 import random
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
 
-DICTIONARY = ['', 'boy', 'girl', 'book', 'pencil', 'pen', 'burger', 'cup', 'computer', 'phone', 'apple',\
-'boys', 'girls', 'books', 'pencils', 'pens', 'burgers', 'cups', 'computers', 'phones', 'apples',\
-'is' , 'are', 'am',\
-'i', 'he', 'she', 'it',\
-'they', 'this', 'that', 'these', 'those', 'not', 'a', 'an', 'the', 'with',\
-'reading', 'writing', 'eating', 'using', 'drinking',\
-'read', 'write', 'eat', 'use', 'drink', 'have',\
-'reads', 'writes', 'ears', 'uses', 'drinks', 'has']
+
+
+DICTIONARY = ['i', 'he', 'she', 'they', '','am', 'is', 'are', 'boy', 'girl', 'boys', 'girls','a', 'an',\
+'it', 'dog', 'dogs', 'cat', 'cats', 'computer', 'computers', 'cup', 'cups' 
+]
 
 
 NUMBER_OF_POSITIONS = 4
@@ -17,7 +17,7 @@ START_POSITION[0] = 1
 NUMBER_OF_CHARS = len(DICTIONARY)
 PERCENT_OF_TESTS = 0.1
 TenzToAdd = 2.0
-EPS = 0.001
+EPS = 0.0001
 NU = 0.7
 NU_ADDER = 0.3
 
@@ -49,6 +49,7 @@ class NeuralNetwork:
         return lastsum(self, curr_pos)
 
     def train_online(self, dataset):
+        times = 0
         average_error = 1.0
         epoch_number = 0
         n = len(dataset)
@@ -57,7 +58,7 @@ class NeuralNetwork:
             random.shuffle(dataset)
             cases_left = len(dataset)
             epoch_number += 1
-            print 'Epoch #' + str(epoch_number)
+            #print 'Epoch #' + str(epoch_number)
             while(cases_left > tests_size):
                 self.train(dataset[cases_left - 1][0], dataset[cases_left - 1][1])
                 cases_left -= 1
@@ -65,7 +66,9 @@ class NeuralNetwork:
             for i in range(cases_left):
                 average_error += cost_function(dataset[i][1], self.check(dataset[i][0]))
             average_error /= cases_left
-            print "Average error: " + str(average_error)
+            plt.plot(times, average_error, 'bo')
+            times += 1
+            #print "Average error: " + str(average_error)
 
     def train(self, word, exp):
         cut_v = np.vectorize(cut)
@@ -194,7 +197,7 @@ def cut(x):
     return x
 
 
-f = open('sentence_2.txt', 'r')
+f = open('sentence_0.txt', 'r')
 dataset = []
 for line in f:
     arr = line.split('\\')
@@ -204,6 +207,10 @@ for line in f:
     dataset.append([arr[0], isOk])
 
 
-nn = NeuralNetwork();
+nn = NeuralNetwork()
 nn.train_online(dataset)
 nn.get_automaton()
+
+plt.xlabel('Times of view')
+plt.ylabel('error rate')
+plt.show()
