@@ -1,0 +1,14 @@
+I am a boy\1
+I am a girl\1
+I am a boys\0
+I am a girls\0
+he is a boy\1
+he is a boys\0
+she is a girl\1
+she is a girls\0
+they are boys\1
+they are girls\1
+they are a boy\0
+they are a girl\0
+they are a boys\0
+they are a girls\0
